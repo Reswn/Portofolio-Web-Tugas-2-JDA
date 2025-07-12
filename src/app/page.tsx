@@ -14,7 +14,7 @@ export default function HomePage() {
       I&apos;m a <span></span>
     </h3>
     <p>
-      Halo, saya Reni Kartika, mahasiswa Informatika yang memiliki passion di bidang web development dan data science. 
+      Halo saya Reni Kartika mahasiswa Informatika yang memiliki passion di bidang web development dan data science. 
       Saya membangun aplikasi web yang efisien dan mudah digunakan serta menganalisis data untuk menyelesaikan masalah nyata. 
       Selamat datang di portofolio saya!
     </p>
