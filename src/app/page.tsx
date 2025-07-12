@@ -14,8 +14,8 @@ export default function HomePage() {
       I&apos;m a <span></span>
     </h3>
     <p>
-      Halo saya Reni Kartika mahasiswa Informatika yang memiliki passion di bidang web development dan data science. 
-      Saya membangun aplikasi web yang efisien dan mudah digunakan serta menganalisis data untuk menyelesaikan masalah nyata. 
+      Halo saya Reni Kartika mahasiswa Informatika yang memiliki passion di bidang web development dan data science
+      Saya membangun aplikasi web yang efisien dan mudah digunakan serta menganalisis data untuk menyelesaikan masalah nyata
       Selamat datang di portofolio saya!
     </p>
     <div className="icons">
@@ -51,12 +51,12 @@ export default function HomePage() {
             <div className="timeline-content">
               <h3>Universitas Sebelas April</h3>
               <p>
-                Reni Kartika menempuh pendidikan S1 di jurusan Informatika, yang
-                memberikan dasar kuat dalam pemrograman, pengembangan perangkat
-                lunak, serta teknologi data. Ini melibatkan pembelajaran tentang
-                pengembangan web, machine learning, manajemen proyek, dan
-                teknologi IoT, seiring dengan ketertarikan pada data science dan
-                web development.
+                Reni Kartika menempuh pendidikan S1 di jurusan Informatika yang
+                memberikan dasar kuat dalam pemrograman pengembangan perangkat
+                lunak, serta teknologi data Ini melibatkan pembelajaran tentang
+                pengembangan web, machine learning, manajemen proyek dan
+                teknologi IoT seiring dengan ketertarikan pada data science dan
+                web development
               </p>
             </div>
           </div>
@@ -66,9 +66,9 @@ export default function HomePage() {
             <div className="timeline-content">
               <h3>SMAN 1 Sumedang</h3>
               <p>
-                Reni menempuh pendidikan SMA dengan jurusan MIPA, yang
-                memberikan landasan kuat dalam bidang matematika dan sains,
-                mendukung pengembangan minatnya dalam teknologi dan informatika.
+                Reni menempuh pendidikan SMA dengan jurusan MIPA yang
+                memberikan landasan kuat dalam bidang matematika dan sains
+                mendukung pengembangan minatnya dalam teknologi dan informatika
               </p>
             </div>
           </div>
