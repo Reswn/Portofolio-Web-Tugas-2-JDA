@@ -1,40 +1,46 @@
 "use client";
+import Image from 'next/image';
 
 export default function HomePage() {
   return (
     <div>
-      <section className="home" id="home">
-        <div className="content">
-          <h1>
-            Hi, it's <span>Reni Kartika</span>
-          </h1>
-          <h3 className="text-animation">
-            i'm a <span></span>
-          </h3>
-          <p>
-            "Halo, saya Reni Kartika, mahasiswa Informatika yang memiliki
-            passion di bidang web development dan data science. Saya membangun
-            aplikasi web yang efisien dan mudah digunakan serta menganalisis
-            data untuk menyelesaikan masalah nyata. Selamat datang di portofolio
-            saya!"
-          </p>
-          <div className="icons">
-            <i className="fab fa-linkedin" aria-hidden="true"></i>
-            <i className="fab fa-github" aria-hidden="true"></i>
-            <i className="fab fa-instagram" aria-hidden="true"></i>
-            <i className="fab fa-twitter" aria-hidden="true"></i>
-          </div>
-          <div className="flex-btn">
-            <a href="#" className="btn hire">
-              hire
-            </a>
-            <a href="#contact" className="btn">
-              contact
-            </a>
-          </div>
-        </div>
-        <img src="Reni formal.jpg" alt="" />
-      </section>
+
+<section className="home" id="home">
+  <div className="content">
+    <h1>
+      Hi, it&apos;s <span>Reni Kartika</span>
+    </h1>
+    <h3 className="text-animation">
+      I&apos;m a <span></span>
+    </h3>
+    <p>
+      Halo, saya Reni Kartika, mahasiswa Informatika yang memiliki passion di bidang web development dan data science. 
+      Saya membangun aplikasi web yang efisien dan mudah digunakan serta menganalisis data untuk menyelesaikan masalah nyata. 
+      Selamat datang di portofolio saya!
+    </p>
+    <div className="icons">
+      <i className="fab fa-linkedin" aria-hidden="true"></i>
+      <i className="fab fa-github" aria-hidden="true"></i>
+      <i className="fab fa-instagram" aria-hidden="true"></i>
+      <i className="fab fa-twitter" aria-hidden="true"></i>
+    </div>
+    <div className="flex-btn">
+      <a href="#" className="btn hire">
+        Hire
+      </a>
+      <a href="#contact" className="btn">
+        Contact
+      </a>
+    </div>
+  </div>
+  <Image
+    src="/Reni formal.jpg"
+    alt="Foto formal Reni Kartika"
+    width={400}
+    height={500}
+  />
+</section>
+
 
       <section className="education" id="education">
         <h2 className="heading">Education</h2>
@@ -175,54 +181,63 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="portofolio">
-        <h2 className="heading">Latest Project</h2>
-        <h4>
-          <span className="pb-10px">Project that I have done</span>
-        </h4>
+     import Image from "next/image";
 
-        <div className="portofolio-gallery">
-          {[
-            {
-              img: "porto (1).jpg",
-              title: "Healingku.ai",
-              description:
-                "Healingku.ai adalah platform perencanaan perjalanan wisata berbasis AI. Membantu membuat itinerary otomatis berdasarkan preferensi pengguna.",
-              link: "https://github.com/Reswn/HEALINGKU.AI_UAS_Digital-Startup",
-              category: "product",
-            },
-            {
-              img: "porto (2).jpg",
-              title: "Blog App",
-              description:
-                "Aplikasi blog dengan fitur membuat, membaca, dan mengedit postingan. Dibangun menggunakan Next.js dan MongoDB dengan autentikasi dan dashboard admin.",
-              link: "https://github.com/Reswn/Blog-App_",
-              category: "web",
-            },
-            {
-              img: "porto (3).jpg",
-              title: "Car Price Predictive Analysis",
-              description:
-                "Aplikasi prediksi harga mobil menggunakan Machine Learning. Terdapat web interaktif yang memungkinkan pengguna memasukkan fitur mobil dan mendapatkan estimasi harga secara real-time.",
-              link: "https://github.com/Reswn/Car-Price-Prediction-Application",
-              category: "ml",
-            },
-          ].map((item, index) => (
-            <div className={`port-box mix ${item.category}`} key={index}>
-              <div className="port-image">
-                <img src={`/${item.img}`} alt={`Project ${index + 1}`} />
-              </div>
-              <div className="port-content">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-external-link" aria-hidden="true"></i>
-                </a>
-              </div>
-            </div>
-          ))}
+<section className="portofolio" id="portofolio">
+  <h2 className="heading">Latest Project</h2>
+  <h4>
+    <span className="pb-10px">Projects that I have done</span>
+  </h4>
+
+  <div className="portofolio-gallery">
+    {[
+      {
+        img: "porto (1).jpg",
+        title: "Healingku.ai",
+        description:
+          "Healingku.ai adalah platform perencanaan perjalanan wisata berbasis AI. Membantu membuat itinerary otomatis berdasarkan preferensi pengguna.",
+        link: "https://github.com/Reswn/HEALINGKU.AI_UAS_Digital-Startup",
+        category: "product",
+      },
+      {
+        img: "porto (2).jpg",
+        title: "Blog App",
+        description:
+          "Aplikasi blog dengan fitur membuat, membaca, dan mengedit postingan. Dibangun menggunakan Next.js dan MongoDB dengan autentikasi dan dashboard admin.",
+        link: "https://github.com/Reswn/Blog-App_",
+        category: "web",
+      },
+      {
+        img: "porto (3).jpg",
+        title: "Car Price Predictive Analysis",
+        description:
+          "Aplikasi prediksi harga mobil menggunakan Machine Learning. Terdapat web interaktif yang memungkinkan pengguna memasukkan fitur mobil dan mendapatkan estimasi harga secara real-time.",
+        link: "https://github.com/Reswn/Car-Price-Prediction-Application",
+        category: "ml",
+      },
+    ].map((item, index) => (
+      <div className={`port-box mix ${item.category}`} key={index}>
+        <div className="port-image">
+          <Image
+            src={`/${item.img}`}
+            alt={`Screenshot of ${item.title}`}
+            width={400}
+            height={300}
+            style={{ objectFit: "cover" }}
+          />
         </div>
-      </section>
+        <div className="port-content">
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          <a href={item.link} target="_blank" rel="noopener noreferrer">
+            <i className="fa fa-external-link" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       <section className="contact" id="contact">
         <h2 className="heading">
