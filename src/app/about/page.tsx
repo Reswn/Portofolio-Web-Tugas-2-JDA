@@ -1,4 +1,8 @@
 // src/app/about/page.tsx
+'use client';
+
+import Image from 'next/image';
+
 export default function AboutPage() {
   return (
     <div>
@@ -9,7 +13,7 @@ export default function AboutPage() {
             Hi, it&apos;s <span>Reni Kartika</span>
           </h1>
           <h3 className="text-animation">
-            i&apos;m a <span></span>
+            I&apos;m a <span></span>
           </h3>
           <p>
             &quot;Halo, saya Reni Kartika, mahasiswa Informatika yang memiliki
@@ -28,13 +32,21 @@ export default function AboutPage() {
             <a href="#" className="btn hire">
               hire
             </a>
-            <a href="#" className="btn">
+            <a href="#contact" className="btn">
               contact
             </a>
           </div>
         </div>
-        {/* Perhatikan: <img> bisa diganti dengan <Image> dari next/image untuk optimalisasi */}
-        <img src="/Reni formal.jpg" alt="Reni Kartika" />
+        <div className="image-container">
+          <Image
+            src="/Reni formal.jpg"
+            alt="Reni Kartika"
+            width={400}
+            height={500}
+            style={{ objectFit: 'cover', borderRadius: '1rem' }}
+            priority
+          />
+        </div>
       </section>
 
       {/* Section Education */}
