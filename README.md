@@ -35,9 +35,7 @@ Website ini dibangun sebagai media untuk memperkenalkan diri, menampilkan proyek
 
 ---
 
-## 🚀 Live Demo
 
-👉 [Lihat Portfolio Secara Langsung](https://your-live-site-url.com)
 
 ---
 
