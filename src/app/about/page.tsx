@@ -6,17 +6,17 @@ export default function AboutPage() {
       <section className="home" id="home">
         <div className="content">
           <h1>
-            Hi, it's <span>Reni Kartika</span>
+            Hi, it&apos;s <span>Reni Kartika</span>
           </h1>
           <h3 className="text-animation">
-            i'm a <span></span>
+            i&apos;m a <span></span>
           </h3>
           <p>
-            "Halo, saya Reni Kartika, mahasiswa Informatika yang memiliki
+            &quot;Halo, saya Reni Kartika, mahasiswa Informatika yang memiliki
             passion di bidang web development dan data science. Saya membangun
             aplikasi web yang efisien dan mudah digunakan serta menganalisis
             data untuk menyelesaikan masalah nyata. Selamat datang di portofolio
-            saya!"
+            saya!&quot;
           </p>
           <div className="icons">
             <i className="fab fa-linkedin" aria-hidden="true"></i>
@@ -33,11 +33,11 @@ export default function AboutPage() {
             </a>
           </div>
         </div>
+        {/* Perhatikan: <img> bisa diganti dengan <Image> dari next/image untuk optimalisasi */}
         <img src="/Reni formal.jpg" alt="Reni Kartika" />
       </section>
 
       {/* Section Education */}
-
       <section className="education" id="education">
         <h2 className="heading">Education</h2>
         <div className="timeline-items">
